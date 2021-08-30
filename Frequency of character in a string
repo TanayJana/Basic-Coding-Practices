@@ -1,0 +1,25 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner t=new Scanner(System.in);
+		int count=0;
+		String n=t.nextLine();
+		n=n.toLowerCase();
+		String given=t.nextLine();
+		given=given.toLowerCase();
+		if(given.length()>1){
+		    System.out.println("Please Enter Single Character!!");
+		}
+		else{
+		for(int i=0;i<n.length();i++)
+		{
+		        if(given.charAt(0)==n.charAt(i))
+		        {
+		            count++;
+		        }
+		  }
+		    System.out.println(count);
+		}
+	}
+}
